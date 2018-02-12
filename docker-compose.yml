@@ -13,7 +13,7 @@ services:
   kairosdb: 
     build: .
     environment:
-      - KAIROSDB.SERVICE.DATASTORE=org.kairosdb.datastore.cassandra.CassandraModule
+      - KAIROSDB_SERVICE_DATASTORE=org.kairosdb.datastore.cassandra.CassandraModule
       - KAIROSDB_DATASTORE_CASSANDRA_CQL_HOST_LIST=scylla
     ports: 
       - "8080:8080" 
